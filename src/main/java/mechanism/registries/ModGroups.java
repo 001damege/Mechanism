@@ -14,5 +14,6 @@ public class ModGroups {
                     .withTabsBefore(MekanismCreativeTabs.MEKANISM.key())
                     .displayItems((display, output) -> {
                         CreativeTabDeferredRegister.addToDisplay(ModItems.ITEMS, output);
+                        CreativeTabDeferredRegister.addToDisplay(ModFluids.FLUIDS, output);
                     }));
 }
