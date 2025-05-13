@@ -1,6 +1,8 @@
 package mechanism.registries;
 
 import mechanism.Mechanism;
+import mechanism.item.ItemEinsteinium;
+import mekanism.api.text.EnumColor;
 import mekanism.common.registration.impl.ItemDeferredRegister;
 import mekanism.common.registration.impl.ItemRegistryObject;
 import net.minecraft.world.item.Item;
@@ -147,7 +149,7 @@ public class ModItems {
         CURIUM = ITEMS.register("curium");
         BERKELIUM = ITEMS.register("berkelium");
         CALIFORNIUM = ITEMS.register("californium");
-        EINSTEINIUM = ITEMS.register("einsteinium");
+        EINSTEINIUM = ITEMS.register("einsteinium", () -> new ItemEinsteinium(new Item.Properties(), EnumColor.DARK_BLUE));
     }
 
     private ModItems() {}
